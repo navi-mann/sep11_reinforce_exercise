@@ -36,7 +36,7 @@ music = {"kind"=>"playlist", "id"=>405726, "created_at"=>"2010/11/02 09:24:50 +0
 # user
 # tracks
 
-number_of_tracks =  music["tracks"][0].count
+puts number_of_tracks =  music["tracks"].count
 
 
 # What is the total duration of the playlist? Save this value in a variable.
@@ -45,4 +45,4 @@ number_of_tracks =  music["tracks"][0].count
 duration = music["tracks"][0]["duration_in_milliseconds"]
 
 
-puts duration
+# puts duration
