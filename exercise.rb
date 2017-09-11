@@ -42,7 +42,6 @@ puts number_of_tracks =  music["tracks"].count
 # What is the total duration of the playlist? Save this value in a variable.
 
 
-duration = music["tracks"][0]["duration_in_milliseconds"]
+duration = music["tracks"].map {|t| t["duration_in_milliseconds"]}.reduce(0, :+)
 
-
-# puts duration
+puts duration
